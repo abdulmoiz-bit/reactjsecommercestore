@@ -43,7 +43,7 @@ export const App = () => {
         <Route exact path="/cart" element={<Cart />} />
         <Route exact path="/checkout" element={<Checkout />} />
       </Routes>
-    </>
+    </> 
   );
 };
 
