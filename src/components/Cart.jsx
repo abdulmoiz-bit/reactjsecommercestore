@@ -27,7 +27,7 @@ const Cart = () => {
                 <div className="container p-4">
                     <button onClick={clrProducts} className='btn-close float-end' aria-label='Close'></button>
                     <div className="row">
-                        <div className="col-md-4 text-center mb-5" >
+                        <div className="col-md-4 text-center mb-5" style={{background : 'none'}} >
                             <img src={cartItem.image} alt={cartItem.title} height="200px" width="180px"/>
                         </div>
                         <div className="col-md-8">
@@ -50,8 +50,8 @@ const Cart = () => {
                                     dispatch(incCart(cartItem))
                                 }>+</button>
                             </div>
-                            <div className="buttons">
-                                <button className="btn btn-outline-dark mt-2 " onClick={clrProducts} >Remove From Cart</button>
+                            <div>
+                                <button className="btn btn-outline-dark cartbtn mt-2 " onClick={clrProducts} >Remove From Cart</button>
                             </div>
                         </div>
 
@@ -93,8 +93,8 @@ const Cart = () => {
                     <div className="container ">
                         <div className="row">
                             <div className="container text-center">
-                                <NavLink className='btn btn-outline-dark mb-3 ' to="/checkout">Proceed to Checkout</NavLink> &nbsp;
-                                <button className='btn btn-outline-dark mb-3' onClick={clrProducts}>Clear Cart</button>
+                                <NavLink className='btn btn-outline-dark cartbtn mb-3 ' to="/checkout">Proceed to Checkout</NavLink> &nbsp;
+                                <button className='btn btn-outline-dark cartbtn mb-3' onClick={clrProducts}>Clear Cart</button>
                             </div>
                         </div>
                     </div>

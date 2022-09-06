@@ -196,6 +196,12 @@ html {
   align-items: center;
 }
 
+.cartbtn{
+  background-color: black;
+  border: black;
+  border-radius: 12px;
+}
+
 .subtotal {
   padding: 0 3rem 1rem 0;
   font-size: large;
